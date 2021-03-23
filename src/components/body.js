@@ -14,7 +14,7 @@ import '../App.css';
 function Body(){
     return(
         <>
-        <Navbar/>
+ <Navbar/>
       <div className="p-2 bck">
       <div className="absolute w-full mr-24 mt-96 z-30">
       <center><div className="container is-widescreen  ">
@@ -37,6 +37,7 @@ function Body(){
               </button></div>
             </div>
             </form>
+
             <div class="grid grid-flow-col grid-cols-4 grid-rows-2 gap-4 mt-3 md:ml-24">
          <div className="bg-black bg-opacity-25 border-solid border-2 border-white text-white  font-bold p-2 rounded-md md:pl-12"><p className="text-sm md:text-md">Travel Agency</p></div>
          <div className="bg-black bg-opacity-25 border-solid border-2 border-white text-white font-bold p-2 rounded-md ">Tour Guides</div>
@@ -81,6 +82,7 @@ function Body(){
         ujhhhhhhhhhhhh
        
       </div>
+
         </>
     )
 }
