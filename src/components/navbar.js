@@ -63,190 +63,52 @@
 import React,{Component,useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {NavDropdown,Form,FormControl,Button } from 'react-bootstrap';
-
-function Navbar(){
-
-  const [toggle,setToggle] = useState(false);
-  const [drop,setDrop] = useState(false);
-  const [clicks,setClicks] = useState(0)
-  const [small,setSmall] = useState(false);
-  const [ini,setIni] =useState(false);
-  const handleout = () => setIni(false);
-  const handleIni = () => setIni(true);
-  
-  const handleToggle = ()=>{
-    if(clicks===0){
-      setDrop(false);
-      setToggle(true);
-      setClicks(1);
-    }else{
-      setToggle(false);
-      // setDrop(true);
-      setClicks(0);
-    }
-   
-  }
-
-  const handleSolution = ()=>{
-    // setDrop(true);
-    // setToggle(false);
-      if(clicks===0){
-        setToggle(false);
-        setDrop(true);
-        setClicks(1);
-    }else{
-      // setToggle(true);
-      setDrop(false);
-      setClicks(0);
-    }
-
-  }
-
-
-  const handleClick = ()=>{
-    setSmall(true);
-
-   
-  }
-
-  const handleSmall = ()=>{
-    setSmall(false);
-  }
-
- 
-  
-
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar'
+function Navbar1(){
     return(
       <>
-
-<div className=" bg-white fixed w-full z-50 p-2 shadow-md">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-      <div class="lg:w-0 lg:flex-1">
-        <a href="/" class="flex">
-        <p className="font-bold italic text-3xl text-green-500 inline-block">BT<span className="text-black">SW</span> <span className="text-yellow-500">..</span></p>
-          {/* <img class="h-8 w-auto sm:h-10" src="" alt=""  /> */}
-        </a>
-      </div>
-      <div class="-mr-2 -my-2 md:hidden">
-        <button type="button" onClick={handleClick} class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-black  focus:outline-none  focus:text-black transition duration-150 ease-in-out">
-          {/* <!-- Heroicon name: menu --> */}
-          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-        
-      </div>
-
-      <nav class="hidden md:flex space-x-10">
-      <div class=" nav-item dropdown text-base leading-6 font-medium text-black hover:text-black focus:outline-none  transition ease-in-out duration-150">
-        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Services by Catrgory
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Hotels/Loges</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Travel Agencies</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Restaurants</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Nights Clubs</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Car Rental</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Boat</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Mokoro</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Currency Exchange Service</a>
-        </div>
-      </div>
-
-        <a href="/" class="mt-2 text-base leading-6 font-medium text-black hover:text-blue-400 focus:outline-none  transition ease-in-out duration-150">
-         About
-        </a>
-        <a href="/about-us" class="mt-2 text-base leading-6 font-medium text-black hover:text-blue-400 focus:outline-none  transition ease-in-out duration-150">
-         Get the App
-        </a>
-        <a className=" mt-2 inline-block pl-4 pr-12 font-bold text-lg hover:text-yellow-500 text-black" href="">Login</a>
-        <div className=" inline-block pl-3 font-bold bg-green-500 text-black rounded-md h-12 w-24 pt-3 center hover:bg-yellow-500"><a href="" className="text-black">Sign Up</a></div>
-      </nav>
-    </div>
-  </div>
-
-
-
-  {small?
-  <div class=" top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-    <div class="rounded-lg shadow-lg">
-      <div class="rounded-lg shadow-xs morpheus-den-gradient">
-        <div class="pt-5 pb-6 px-5 space-y-6">
-          <div class="flex items-center justify-between">
-            <div>
-              {/* <p className="text-xl uppacase font-bold text-black">M-Health</p> */}
-              {/* <img class="h-8 w-auto sm:h-10" src=""  alt=""  /> */}
-            </div>
-            <div class="-mr-2">
-              
-              <button type="button" onClick={handleSmall} class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-black hover:bg-blue focus:outline-none focus:bg-blue-100 focus:text-black transition duration-150 ease-in-out">
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div>
-            {/* <nav class="grid gap-y-8"> */}
-
-            <nav class="grid gap-y-8">
-      <div class=" nav-item dropdown text-base leading-6 font-medium text-black hover:text-black focus:outline-none  transition ease-in-out duration-150">
-        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Services by Catrgory
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Hotels/Loges</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Travel Agencies</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Restaurants</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Nights Clubs</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Car Rental</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Boat</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Mokoro</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Currency Exchange Service</a>
-        </div>
-      </div>
-
-        <a href="/" class="ml-3 text-base leading-6 font-medium text-black hover:text-blue-400 focus:outline-none  transition ease-in-out duration-150">
-         About
-        </a>
-        <a href="/about-us" class="ml-3 text-base leading-6 font-medium text-black hover:text-blue-400 focus:outline-none  transition ease-in-out duration-150">
-         Get the App
-        </a>
-        <a className=" ml-3 inline-block font-bold text-lg hover:text-yellow-500 text-black" href="">Login</a>
-        <div className=" inline-block pl-3 font-bold bg-green-500 text-black rounded-md h-12 w-24 pt-3 center hover:bg-yellow-500"><a href="" className="text-black">Sign Up</a></div>
-      </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  :<span></span>}
-
+      <div  class="fixed w-full z-50 p-4 bg-white shadow-md">
+<Navbar collapseOnSelect expand="lg" bg="white"  >
+  <Navbar.Brand href="#home"><p className="font-bold italic text-3xl text-green-500 inline-block">BT<span className="text-black">SW</span> <span className="text-yellow-500">..</span></p></Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto ml-4 font-bold text-lg text-black">
+    <span className="text-black "><NavDropdown title={
+        <span class="text-black" >Services by Category</span>} id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#">Hotels & Loges</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#">Travel Agencies</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#">Restaurants</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#">Night Clubs</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#">Care Rental</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#">Boat</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#">Mokoro</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#">Currency Exchange service</NavDropdown.Item>
+      </NavDropdown>
+      </span>
+      <Nav.Link href="#"><span class="text-black">About Us</span></Nav.Link>
+      <Nav.Link href="#"><span class="text-black">Get the App</span></Nav.Link>
+    </Nav>
+    <Nav>
+      <Nav.Link href="#"><div className=" mt-2 inline-block pl-4 pr-12 font-bold text-lg hover:text-yellow-500"><a href="" className="text-black">Login</a></div></Nav.Link>
+      <Nav.Link eventKey={2} href="#">
+      <div className="inline-block pl-4 font-bold bg-green-500 text-black rounded-md h-12 w-24 pt-3 center hover:bg-yellow-500"><a href="" className="text-black">Sign Up</a></div>
+      </Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
 </div>
-
-
-
-
-
      
         </>
     )
 }
 
-export default Navbar;
+export default Navbar1;

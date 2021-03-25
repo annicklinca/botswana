@@ -1,20 +1,21 @@
 import React,{Component,useState} from 'react';
 import "../css/tailwindcss.css";
 import { FaMapMarkerAlt, FaSearch, FaSistrix } from 'react-icons/fa';
-import Navbar from './navbar';
+import Navbar1 from './navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import drain from '../images/drain.jpg';
 import nature from '../images/nature.jpg';
 import background from '../images/background.gif';
 import { BiMap } from "react-icons/bi";
+// import Translator from './Translator';
 
 import '../App.css';
 
 function Body(){
     return(
         <>
- <Navbar/>
+ <Navbar1/>
       <div className="p-2 bck">
       <div className="absolute w-full mr-24 mt-96 z-30">
       <center><div className="container is-widescreen  ">
@@ -53,8 +54,6 @@ function Body(){
         <div> 
         
         </div>
-      
-       
 		
 		</div>
 
