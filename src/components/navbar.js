@@ -77,7 +77,7 @@ function Navbar1(){
     <Nav className="mr-auto ml-4 font-bold text-lg text-black">
     <span className="text-black "><NavDropdown title={
         <span class="text-black" >Services by Category</span>} id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#">Hotels & Loges</NavDropdown.Item>
+        <NavDropdown.Item href="/tourism">Hotels & Loges</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#">Travel Agencies</NavDropdown.Item>
         <NavDropdown.Divider />
@@ -98,9 +98,9 @@ function Navbar1(){
       <Nav.Link href="#"><span class="text-black">Get the App</span></Nav.Link>
     </Nav>
     <Nav>
-      <Nav.Link href="#"><div className=" mt-2 inline-block pl-4 pr-12 font-bold text-lg hover:text-yellow-500"><a href="" className="text-black">Login</a></div></Nav.Link>
-      <Nav.Link eventKey={2} href="#">
-      <div className="inline-block pl-4 font-bold bg-green-500 text-black rounded-md h-12 w-24 pt-3 center hover:bg-yellow-500"><a href="" className="text-black">Sign Up</a></div>
+      <Nav.Link href="/signin"><div className=" mt-2 inline-block pl-4 pr-12 font-bold text-lg hover:text-yellow-500"><p className="text-black">Login</p></div></Nav.Link>
+      <Nav.Link eventKey={2} href="/signup">
+      <div className="inline-block pl-4 font-bold bg-green-500 text-black rounded-md h-12 w-24 pt-3 center hover:bg-yellow-500"><p className="text-black">Sign Up</p></div>
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>

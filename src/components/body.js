@@ -15,9 +15,9 @@ import image4 from '../images/background.gif';
 
 function Body(){
     return(
-        <>
+<>
  <Navbar1/>
- <di>
+ <div class="container">
  <BackgroundSlider
   images={[image1, image2, image3, image4]}
   duration={10} transition={2}
@@ -55,8 +55,14 @@ function Body(){
          </div>
         </div>
         </center>
- </di>
-        </>
+ </div>
+
+ <div class="bg-white mt-12">
+<h1 class="text-center"><a href="/signin">Hello World</a></h1>
+<br/>
+<br/><br/><br/><br/><br/><br/><br/>
+ </div>
+ </>
     )
 }
         
