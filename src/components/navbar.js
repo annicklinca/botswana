@@ -69,7 +69,7 @@ import Nav from 'react-bootstrap/Nav';
 function Navbar1(){
     return(
       <>
-      <div  class="fixed w-full z-50 p-4 bg-white shadow-md">
+      <div  class="w-full p-4 bg-white shadow-md">
 <Navbar collapseOnSelect expand="lg" bg="white"  >
   <Navbar.Brand href="#home"><p className="font-bold italic text-3xl text-green-500 inline-block">BT<span className="text-black">SW</span> <span className="text-yellow-500">..</span></p></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />

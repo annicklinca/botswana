@@ -3,22 +3,26 @@ import "../css/tailwindcss.css";
 import { FaMapMarkerAlt, FaSearch, FaSistrix } from 'react-icons/fa';
 import Navbar1 from './navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BackgroundSlider from 'react-background-slider';
 import { Carousel } from 'react-bootstrap';
-import drain from '../images/drain.jpg';
-import nature from '../images/nature.jpg';
-import background from '../images/background.gif';
+
 import { BiMap } from "react-icons/bi";
 // import Translator from './Translator';
-
-import '../App.css';
+import image1 from '../images/drain.jpg';
+import image2 from '../images/elephant.jpg';
+import image3 from '../images/nature.jpg';
+import image4 from '../images/background.gif';
 
 function Body(){
     return(
         <>
  <Navbar1/>
-      <div className="p-2 bck">
-      <div className="absolute w-full mr-24 mt-96 z-30">
-      <center><div className="container is-widescreen  ">
+ <di>
+ <BackgroundSlider
+  images={[image1, image2, image3, image4]}
+  duration={10} transition={2}
+   />
+      <center><div className="container is-widescreen  mt-32">
          <form className=" md:ml-32 md:mr-32 bg-white  pl-6 pt-2 pr-6 rounded-2xl">
             <div className="flex flex-wrap">
              
@@ -51,37 +55,7 @@ function Body(){
          </div>
         </div>
         </center>
-        <div> 
-        
-        </div>
-		
-		</div>
-
-      <ul class="cb-slideshow bck ">
-     
-	<li>
-		<span class="z-30 ">Image 01</span>
-	
-	</li>
-  <li className="">
-		<span>Image 01</span>
-		<div>
-			<h3 className="absolute mt-96 z-30">BOTSWANA</h3>
-		</div>
-	</li>
-  <li>
-		<span>Image 01</span>
-		<div>
-			<h3>BOTSWANA</h3>
-		</div>
-	</li>
-</ul>
-      </div>
-      <div>
-        ujhhhhhhhhhhhh
-       
-      </div>
-
+ </di>
         </>
     )
 }
