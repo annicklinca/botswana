@@ -12,3 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.contactimage{
+  background-image: url('./images/image3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-section{
+  width: 100%;
+  height: 100%;
+}

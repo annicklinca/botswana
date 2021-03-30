@@ -10,6 +10,7 @@ import Body from './components/body';
 import Signup from './components/Signup.js';
 import Signin from './components/Signin.js';
 import Tourism from './components/Tourism.js';
+import ContactPage  from './components/Contact.js';
 function App() {
   return (
      <Router>
@@ -20,6 +21,9 @@ function App() {
         <Route path="/tourism">
           <Tourism/>
         </Route>  
+        <Route path="/contactus">
+          <ContactPage/>
+        </Route>
      
         </Switch>
     </Router>

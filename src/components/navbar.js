@@ -95,6 +95,7 @@ function Navbar1(){
       </NavDropdown>
       </span>
       <Nav.Link href="#"><span class="text-black">About Us</span></Nav.Link>
+      <Nav.Link href="/contactus"><span class="text-black">Contact Us</span></Nav.Link>
       <Nav.Link href="#"><span class="text-black">Get the App</span></Nav.Link>
     </Nav>
     <Nav>

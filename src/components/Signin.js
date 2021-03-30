@@ -63,36 +63,31 @@ function Signin() {
 
               </div>
             </div>
-            <div className="w-full md:w-1/2 md:rounded-tl-3xl  bg-gray-100">
+            <div className="w-full md:w-1/2 md:rounded-tl-3xl opacity-70 bg-gray-100">
               <div className="pt-3 pl-6 pr-6">
                   <div class="container my-4">  
                             <div class="row">
                               <div class="col-md-12 mb-4">
-                          
-                              
-                                  <form class="pt-3 pb-5 pl-5 pr-5">
+                                <h1 class="text-center">Login</h1>
+                                  <form class="pt-2">
                                     <div class="form-group">
                                     
                                       
                                     </div>
                                     <div class="form-group">
-                                      <label className="font-normal text-green-700">EMAIL</label>
+                                      <label className="font-bold ">EMAIL</label>
                                       <input type="emal" className="form-control rounded-full p-4" placeholder="Enter your email" required />
                                     </div>
                                   
                                     <div class="form-group">
-                                      <label className="font-normal text-green-700">PASSWORD</label>
+                                      <label className="font-bold ">PASSWORD</label>
                                       <input type="password" className="form-control rounded-full p-4" placeholder="Enter password" required />
                                     </div>
-                                    <div class="form-group">
-                                      <label className="font-normal text-green-700">RE-ENTER PASSWORD</label>
-                                      <input type="password" className="form-control rounded-full p-4" placeholder="Enter password" required />
-                                    </div>
-                                    <button class="btn btn-success my-4 btn-block waves-effect waves-light rounded-full w-36 h-42 " type="submit">Sign in</button>
-                                    <a class="mt-4 mb-4 d-block" href="#">Forgot Password?</a>
+                                    <button class="btn btn-success my-4 btn-block waves-effect waves-light rounded-full " type="submit">Sign in</button>
+                                    <a class="mt-4 mb-2 d-block text-center" href="#">Forgot Password?</a>
+                                    <p class="text-center">Don't have account? <a href="/signup" class="text-blue-700">Sign up</a ></p>
                           
-                                    <p>By clicking By creating an account you agree to the Yep!
-                                      Terms of Service andPrivacy Policy
+                                    <p>By signing up you agree to the BTSW! Terms of Service andPrivacy Policy
                                     </p>
                                     
 

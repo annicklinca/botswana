@@ -5,7 +5,8 @@ import Navbar1 from './navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BackgroundSlider from 'react-background-slider';
 import { Carousel } from 'react-bootstrap';
-
+import SmallcardSlider from './smallcardslider.js';
+import Homecarousel from './Homecarousel.js';
 import { BiMap } from "react-icons/bi";
 // import Translator from './Translator';
 import image1 from '../images/drain.jpg';
@@ -56,12 +57,11 @@ function Body(){
         </div>
         </center>
  </div>
-
- <div class="bg-white mt-12">
-<h1 class="text-center"><a href="/signin">Hello World</a></h1>
-<br/>
-<br/><br/><br/><br/><br/><br/><br/>
- </div>
+<div class="bg-white mt-16">
+<SmallcardSlider/>
+</div>
+<h1 class="text-blue-500 text-bold text-xl my-4 text-center">Featured businesses</h1>
+<div class="  my-2 mx-4"><Homecarousel/></div>
  </>
     )
 }
