@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import '../css/tailwindcss.css';
 import axios from 'axios';
 import Navbar from './navbar.js';
+import Footer from './Footer.js';
 const ContactPage = () => {
 
 
@@ -96,7 +97,7 @@ const ContactPage = () => {
         </div>
         <div class="col-md-7 w-full">
           <div id="map-container-section" class="map-container-section mb-4">
-            <iframe src="https://maps.google.com/maps?q=kigali&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            <iframe src="https://maps.google.com/maps?q=Gaborone&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
               frameBorder="0" class="container-section" style={{ border: 0, height: 660, }}  allowfullscreen></iframe>
           </div>
           </div>
@@ -104,6 +105,7 @@ const ContactPage = () => {
       </div>
     </section>
   </div>
+  <Footer/>
   </>
   );
 }

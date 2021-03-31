@@ -13,6 +13,7 @@ import image1 from '../images/drain.jpg';
 import image2 from '../images/elephant.jpg';
 import image3 from '../images/nature.jpg';
 import image4 from '../images/background.gif';
+import Footer from './Footer.js';
 
 function Body(){
     return(
@@ -62,6 +63,7 @@ function Body(){
 </div>
 <h1 class="text-blue-500 text-bold text-xl my-4 text-center">Featured businesses</h1>
 <div class="  my-2 mx-4"><Homecarousel/></div>
+<Footer/>
  </>
     )
 }
