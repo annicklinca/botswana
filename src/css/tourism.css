@@ -3,3 +3,9 @@
     background-size: cover;
     background-position: bg-center;
   }
+
+  .car{
+    background-image: url('../images/car.jpg');
+    background-size: cover;
+    background-position: bg-center;
+  }
