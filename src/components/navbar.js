@@ -83,7 +83,7 @@ function Navbar1(){
         <NavDropdown.Divider />
         <NavDropdown.Item href="#">Restaurants</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#">Night Clubs</NavDropdown.Item>
+        <NavDropdown.Item href="nightclub">Night Clubs</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#">Care Rental</NavDropdown.Item>
         <NavDropdown.Divider />
