@@ -39,7 +39,7 @@ function CarRental() {
       <div>
       <span style={{textDecoration: "underline", color:"blue"}} href="#" id="Tooltippassenger"> <i class="fas fa-users text-black mx-1 prefix "></i></span>
       <br/>
-      <span>5</span>
+      <span>8</span>
       <Tooltip placement="top" isOpen={tooltipOpen} target="Tooltippassenger" toggle={toggle}>
        Passenger
       </Tooltip>
@@ -47,7 +47,7 @@ function CarRental() {
       <div class="mx-3">
       <span style={{textDecoration: "underline", color:"blue"}} href="#" id="Tooltipgear"> <i class="fa fa-arrows-alt text-black mx-1 prefix "></i></span>
       <br/>
-      <span>Auto</span>
+      <span>Normal</span>
       <Tooltip placement="bottom" isOpen={tooltipOpen} target="Tooltipgear" toggle={toggle}>
        Gear Shift
       </Tooltip>
@@ -63,7 +63,7 @@ function CarRental() {
       <div class="mx-3">
       <span style={{textDecoration: "underline", color:"blue"}} href="#" id="TooltipDoor"> <i class="fas fa-door-open text-black mx-1 prefix "></i></span>
       <br/>
-      <span>5</span>
+      <span>4</span>
       <Tooltip placement="top" isOpen={tooltipOpen} target="TooltipDoor" toggle={toggle}>
       Door
       </Tooltip>
@@ -167,7 +167,7 @@ function CarRental() {
       <div>
       <span style={{textDecoration: "underline", color:"blue"}} href="#" id="Tooltippassenger"> <i class="fas fa-users text-black mx-1 prefix "></i></span>
       <br/>
-      <span>5</span>
+      <span>4</span>
       <Tooltip placement="top" isOpen={tooltipOpen} target="Tooltippassenger" toggle={toggle}>
        Passenger
       </Tooltip>
@@ -191,7 +191,7 @@ function CarRental() {
       <div class="mx-3">
       <span style={{textDecoration: "underline", color:"blue"}} href="#" id="TooltipDoor"> <i class="fas fa-door-open text-black mx-1 prefix "></i></span>
       <br/>
-      <span>5</span>
+      <span>6</span>
       <Tooltip placement="top" isOpen={tooltipOpen} target="TooltipDoor" toggle={toggle}>
       Door
       </Tooltip>
@@ -302,7 +302,7 @@ function CarRental() {
       <div class="mx-3">
       <span style={{textDecoration: "underline", color:"blue"}} href="#" id="Tooltipgear"> <i class="fa fa-arrows-alt text-black mx-1 prefix "></i></span>
       <br/>
-      <span>Auto</span>
+      <span>Normal</span>
       <Tooltip placement="bottom" isOpen={tooltipOpen} target="Tooltipgear" toggle={toggle}>
        Gear Shift
       </Tooltip>
@@ -318,7 +318,7 @@ function CarRental() {
       <div class="mx-3">
       <span style={{textDecoration: "underline", color:"blue"}} href="#" id="TooltipDoor"> <i class="fas fa-door-open text-black mx-1 prefix "></i></span>
       <br/>
-      <span>5</span>
+      <span>4</span>
       <Tooltip placement="top" isOpen={tooltipOpen} target="TooltipDoor" toggle={toggle}>
       Door
       </Tooltip>
@@ -445,7 +445,7 @@ function CarRental() {
       <div class="mx-3">
       <span style={{textDecoration: "underline", color:"blue"}} href="#" id="TooltipDoor"> <i class="fas fa-door-open text-black mx-1 prefix "></i></span>
       <br/>
-      <span>5</span>
+      <span>4</span>
       <Tooltip placement="top" isOpen={tooltipOpen} target="TooltipDoor" toggle={toggle}>
       Door
       </Tooltip>
