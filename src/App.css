@@ -16,6 +16,12 @@
   background-image: url('./images/image3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+
+}
+.nightclubimage{
+  background-image: url('./images/ttt.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container-section{
   width: 100%;

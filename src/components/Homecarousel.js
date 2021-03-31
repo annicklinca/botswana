@@ -68,7 +68,7 @@ function SampleNextArrow(props) {
           <div>
         <div class="card mb-3 mx-2">
           <img class="card-img-top"
-            src="image/kutta.jpg" style={{ height:170,}} alt="Card image cap"/>
+            src="image/drain.jpg" style={{ height:170,}} alt="Card image cap"/>
           <div class="card-body">
             <h5 class="card-title text-green-700 text-md font-bold">Chobe National Park</h5>
             <p class="card-text">Chobe National Park is in northern Botswana near the vast, inland Okavango Delta</p>
@@ -80,7 +80,7 @@ function SampleNextArrow(props) {
           <div >
         <div class="card mb-3 mx-2">
           <img class="card-img-top"
-            src="image/image5.jpg" style={{ height:170,}} alt="Card image cap"/>
+            src="image/rock.jpg" style={{ height:170,}} alt="Card image cap"/>
           <div class="card-body">
             <h5 class="card-title text-green-700 font-bold">Tuli Block</h5>
             <p class="card-text">The Tuli Block is a narrow fringe of land at Botswana's eastern border wedged between Zimbabwe in the north and east and South Africa in the south.</p>
@@ -92,7 +92,7 @@ function SampleNextArrow(props) {
           <div >
         <div class="card mb-3 mx-2">
           <img class="card-img-top"
-            src="image/image9.jpg" style={{ height:170,}} alt="Card image cap"/>
+            src="image/tsodilo.jpeg" style={{ height:170,}} alt="Card image cap"/>
           <div class="card-body">
             <h5 class="card-title text-green-700 font-bold">Tsodilo Hills</h5>
             <p class="card-text">The Tsodilo Hills are a UNESCO World Heritage Site, consisting of rock art, rock shelters, depressions, and caves.</p>

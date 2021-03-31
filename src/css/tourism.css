@@ -1,5 +1,5 @@
-.bgimage{
-    background-image: url('../images/image3.jpg');
-    background-size: bg-left-bottom;
+.tourism{
+    background-image: url('../images/hotel1.jpg');
+    background-size: cover;
     background-position: bg-center;
   }

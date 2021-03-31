@@ -13,6 +13,7 @@ import image1 from '../images/drain.jpg';
 import image2 from '../images/elephant.jpg';
 import image3 from '../images/nature.jpg';
 import image4 from '../images/background.gif';
+import Footer from './Footer.js';
 
 function Body(){
     return(
@@ -38,7 +39,7 @@ function Body(){
                 </div>
               </div>
               <div className="w-full md:w-1/5">
-                <button className="md:w-8 w-full bg-green-500 text-white font-bold px-2 py-2 ml-32 rounded-xl">
+                <button className="md:w-8 w-full bg-green-500 text-white font-bold px-2 py-2 md:ml-32 rounded-xl">
                <FaSearch className="inline-block"/>
               </button></div>
             </div>
@@ -62,6 +63,7 @@ function Body(){
 </div>
 <h1 class=" font-bold text-xl my-4 mx-4">Featured businesses</h1>
 <div class="  my-2 mx-4"><Homecarousel/></div>
+<Footer/>
  </>
     )
 }
