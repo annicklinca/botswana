@@ -10,6 +10,7 @@ import Body from './components/body';
 import Signup from './components/Signup.js';
 import Signin from './components/Signin.js';
 import Tourism from './components/Tourism.js';
+import CarRental from './components/CarRental.js';
 import ContactPage  from './components/Contact.js';
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>  
         <Route path="/contactus">
           <ContactPage/>
+        </Route>
+        <Route path="/Car_Rental">
+          <CarRental/>
         </Route>
      
         </Switch>
