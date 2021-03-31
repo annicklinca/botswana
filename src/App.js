@@ -12,6 +12,7 @@ import Signin from './components/Signin.js';
 import Tourism from './components/Tourism.js';
 import ContactPage  from './components/Contact.js';
 import Nightclub from './components/Nightclub.js';
+import Restaurants from './components/Restaurants.js';
 function App() {
   return (
      <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/signup" component={Signup}/>
         <Route exact path="/signin" component={Signin}/>
         <Route exact path="/Nightclub" component={Nightclub}/>
+        <Route exact path="/Restaurants" component={Restaurants}/>
         <Route path="/tourism">
           <Tourism/>
         </Route>  
