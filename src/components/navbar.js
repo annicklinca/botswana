@@ -71,11 +71,11 @@ function Navbar1(){
       <>
       <div  class="w-full p-4 bg-white shadow-md">
 <Navbar collapseOnSelect expand="lg" bg="white"  >
-  <Navbar.Brand href="#home"><p className="font-bold italic text-3xl text-green-500 inline-block">BT<span className="text-black">SW</span> <span className="text-yellow-500">..</span></p></Navbar.Brand>
+  <Navbar.Brand href="/"><p className="font-bold italic text-3xl text-green-500 inline-block">BT<span className="text-black">SW</span> <span className="text-yellow-500">..</span></p></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="mr-auto ml-4 font-bold text-lg text-black">
-    <span className="text-black "><NavDropdown title={
+    <Nav className="mr-auto ml-4 text-sm font-bold text-lg text-black">
+    <span className="text-black text-base"><NavDropdown title={
         <span class="text-black" >Services by Category</span>} id="collasible-nav-dropdown">
         <NavDropdown.Item href="/tourism">Hotels & Loges</NavDropdown.Item>
         <NavDropdown.Divider />
@@ -94,14 +94,14 @@ function Navbar1(){
         <NavDropdown.Item href="#">Currency Exchange service</NavDropdown.Item>
       </NavDropdown>
       </span>
-      <Nav.Link href="#"><span class="text-black">About Us</span></Nav.Link>
-      <Nav.Link href="/contactus"><span class="text-black">Contact Us</span></Nav.Link>
-      <Nav.Link href="#"><span class="text-black">Get the App</span></Nav.Link>
+      <Nav.Link href="#"><span class="text-black text-base">About Us</span></Nav.Link>
+      <Nav.Link href="/contactus"><span class="text-black text-base">Contact Us</span></Nav.Link>
+      <Nav.Link href="#"><span class="text-black text-base">Get the App</span></Nav.Link>
     </Nav>
     <Nav>
       <Nav.Link href="/signin"><div className=" mt-2 inline-block pl-4 pr-12 font-bold text-lg hover:text-yellow-500"><p className="text-black">Login</p></div></Nav.Link>
       <Nav.Link eventKey={2} href="/signup">
-      <div className="inline-block pl-4 font-bold bg-green-500 text-black rounded-md h-12 w-24 pt-3 center hover:bg-yellow-500"><p className="text-black">Sign Up</p></div>
+      <div className="inline-block pl-3 font-bold bg-green-500 rounded-xl h-12 w-24 pt-3 center hover:bg-yellow-500"><p className="text-black">Sign Up</p></div>
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>

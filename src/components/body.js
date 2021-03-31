@@ -38,7 +38,7 @@ function Body(){
                 </div>
               </div>
               <div className="w-full md:w-1/5">
-                <button className="md:w-8 w-full bg-green-500 text-white font-bold px-2 py-2 rounded-2xl">
+                <button className="md:w-8 w-full bg-green-500 text-white font-bold px-2 py-2 ml-32 rounded-xl">
                <FaSearch className="inline-block"/>
               </button></div>
             </div>
@@ -57,10 +57,10 @@ function Body(){
         </div>
         </center>
  </div>
-<div class="bg-white mt-16">
+<div class="mt-24">
 <SmallcardSlider/>
 </div>
-<h1 class="text-blue-500 text-bold text-xl my-4 text-center">Featured businesses</h1>
+<h1 class=" font-bold text-xl my-4 mx-4">Featured businesses</h1>
 <div class="  my-2 mx-4"><Homecarousel/></div>
  </>
     )

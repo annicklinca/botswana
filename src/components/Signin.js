@@ -55,7 +55,7 @@ function Signin() {
     return(
         <>
 
-        <div className="bgimage">
+        <div className="bgimage h-100">
           <div className="flex flex-wrap">
             <div className="w-full md:w-1/2">
               <div className="p-5">
@@ -63,24 +63,24 @@ function Signin() {
 
               </div>
             </div>
-            <div className="w-full md:w-1/2 md:rounded-tl-3xl opacity-70 bg-gray-100">
+            <div className="w-full md:w-1/2 md:rounded-tl-3xl bg-gray-100">
               <div className="pt-3 pl-6 pr-6">
                   <div class="container my-4">  
                             <div class="row">
                               <div class="col-md-12 mb-4">
-                                <h1 class="text-center">Login</h1>
+                                <h1 class="text-center font-serif font-bold">Login</h1>
                                   <form class="pt-2">
                                     <div class="form-group">
                                     
                                       
                                     </div>
                                     <div class="form-group">
-                                      <label className="font-bold ">EMAIL</label>
+                                      <label className="font-bold text-green-700 font-bold ">EMAIL</label>
                                       <input type="emal" className="form-control rounded-full p-4" placeholder="Enter your email" required />
                                     </div>
                                   
                                     <div class="form-group">
-                                      <label className="font-bold ">PASSWORD</label>
+                                      <label className="font-bold text-green-700 font-bold ">PASSWORD</label>
                                       <input type="password" className="form-control rounded-full p-4" placeholder="Enter password" required />
                                     </div>
                                     <button class="btn btn-success my-4 btn-block waves-effect waves-light rounded-full " type="submit">Sign in</button>
@@ -107,8 +107,7 @@ function Signin() {
          </div>
           
       </div>
-      
-              
+         
               
 
         </>
