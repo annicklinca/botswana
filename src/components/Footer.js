@@ -40,7 +40,7 @@ business that matters. </p>
             </div>
 
       
-            <hr class="clearfix w-100 d-md-none"/>
+           
       
 
             <div class="col-md-3 mx-auto">
@@ -72,7 +72,7 @@ business that matters. </p>
             </div>
 
       
-            <hr class="clearfix w-100 d-md-none"/>
+           
       
 
             <div class="col-md-3 mx-auto">
@@ -98,7 +98,7 @@ business that matters. </p>
             </div>
 
       
-            <hr class="clearfix w-100 d-md-none"/>
+           
       
 
             <div class="col-md-3 mx-auto">
