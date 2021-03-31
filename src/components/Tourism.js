@@ -2,6 +2,7 @@ import React,{useState,useHistory} from 'react';
 import "../css/tailwindcss.css";
 import "../css/tourism.css";
 import Navbar from "./navbar";
+import Footer from "./Footer.js";
 function Tourism() {
 
     return(
@@ -110,12 +111,8 @@ function Tourism() {
  </div>
  </div>
  </div>
-       
-       
-              
-
-        </>
-    )
-
+<Footer/>   
+</>
+)
 }
 export default Tourism;

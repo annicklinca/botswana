@@ -40,7 +40,7 @@ function Footer(){
             </div>
 
       
-            <hr class="clearfix w-100 d-md-none"/>
+           
       
 
             <div class="col-md-3 mx-auto">
@@ -72,7 +72,7 @@ function Footer(){
             </div>
 
       
-            <hr class="clearfix w-100 d-md-none"/>
+           
       
 
             <div class="col-md-3 mx-auto">
@@ -104,7 +104,7 @@ function Footer(){
             </div>
 
       
-            <hr class="clearfix w-100 d-md-none"/>
+           
       
 
             <div class="col-md-3 mx-auto">
