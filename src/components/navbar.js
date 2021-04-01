@@ -17,7 +17,7 @@ function Navbar1(){
         <span class="text-black" >Services by Category</span>} id="collasible-nav-dropdown">
         <NavDropdown.Item href="/tourism">Hotels & Loges</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#">Travel Agencies</NavDropdown.Item>
+        <NavDropdown.Item href="/travel_agences">Travel Agencies</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="restaurants">Restaurants</NavDropdown.Item>
         <NavDropdown.Divider />
