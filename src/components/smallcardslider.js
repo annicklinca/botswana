@@ -4,11 +4,12 @@ import Slider from "react-slick";
 export default class SmallcardSlider extends Component {
   render() {
     var settings = {
-      // dots: true,
-      infinite: false,
-      // speed: 100,
+      infinite: true,
       slidesToShow: 6,
       autoplay: true,
+      speed: 5000,
+      autoplaySpeed: 5000,
+      cssEase: "linear",
       slidesToScroll: 6,
       initialSlide: 0,
       responsive: [

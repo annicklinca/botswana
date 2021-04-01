@@ -61,7 +61,7 @@ function Body(){
 <div class="mt-24">
 <SmallcardSlider/>
 </div>
-<h1 class=" font-bold text-xl my-4 mx-4">Featured businesses</h1>
+<h1 class=" font-bold text-center text-xl my-4 mx-4">Featured businesses</h1>
 <div class="  my-2 mx-4"><Homecarousel/></div>
 <Footer/>
  </>

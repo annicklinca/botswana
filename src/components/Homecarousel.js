@@ -108,7 +108,7 @@ function SampleNextArrow(props) {
           <div class="card-body">
             <h5 class="card-title text-green-700 font-bold text-md">Okovanga Delta</h5>
             <p class="card-text">The Okavango Delta is a vast inland river delta in northern Botswana.</p>
-            <p class="card-text">t's known for its sprawling grassy plains, which flood seasonally, becoming a lush animal habitat</p>
+            <p class="card-text">t's known for its sprawling grassy plains, which flood seasonally</p>
         </div>
       </div>
       

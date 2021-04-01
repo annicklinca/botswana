@@ -5,7 +5,7 @@ function Footer(){
     return(
         <>
       
-      <footer class="page-footer font-small bg-blue-400  shadow-md">
+      <footer class="page-footer font-small bg-black  shadow-md">
       
   
         <div class="container text-center text-md-left">
