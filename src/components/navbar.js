@@ -15,7 +15,7 @@ function Navbar1(){
     <Nav className="mr-auto ml-4 text-sm font-bold text-lg text-black">
     <span className="text-black text-base"><NavDropdown title={
         <span class="text-black" >Services by Category</span>} id="collasible-nav-dropdown">
-        <NavDropdown.Item href="/tourism">Hotels & Loges</NavDropdown.Item>
+        <NavDropdown.Item href="/hotel">Hotels & Loges</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="/travel_agences">Travel Agencies</NavDropdown.Item>
         <NavDropdown.Divider />

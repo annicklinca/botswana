@@ -1,12 +1,33 @@
-import React,{useState,useHistory} from 'react';
+import React,{Component,useState,useEffect} from 'react';
 import "../css/tailwindcss.css";
 import "../css/tourism.css";
 import Navbar from "./navbar";
 import Footer from "./Footer.js";
 import ReactTooltip from 'react-tooltip';
+import axios from 'axios';
 import { Tooltip } from 'reactstrap';
 import Background from '../images/car.jpg';
 function CarRental() {
+
+    const [data, setData] = useState([]);
+    const pathed='http://127.0.0.1:8000'
+    
+    
+           //let fetch information
+           useEffect( ()=>{
+              // async await
+             const response = axios.get('http://127.0.0.1:8000/Carrental/') 
+             .then(res=>{
+               setData(res.data);
+               console.log(res)
+           
+             })
+             .catch((err)=>{
+               console.log(err)
+             })
+           } ,[]
+           );
+
 
         const [tooltipOpen, setTooltipOpen] = useState(false);
       
@@ -37,14 +58,18 @@ function CarRental() {
 <div class="mx-3 mt-2">
 <h5 className=" p-2 pt-4 font-bold">Get a car on an affordable price</h5>
 		<div class="row">
+        {data.map((item,key)=>{ 
+        return( 
  <div class="col-md-3 ">
 <div class="card mb-3 shadow-md">
      <img class="card-img-top"
-      src="image/Toyota RAVA4.jpg" style={{ height:200,}} alt=""/>
+      src={pathed+item.image} alt={item.image}/>
      <div class="card-body">
-      <h4 class="card-title font-bold">Toyota RAVA4</h4>
-      <p class="card-text">Location</p>
-      <div class="flex">
+     <h4 class="card-title font-">{item.location}</h4>
+     <h4 class="card-title font-">{item.telephone}</h4>
+     <h4 class="card-title font-">{item.price}</h4>
+     <h4 class="card-title text-sm">{item.description}</h4>
+      {/* <div class="flex">
       <div>
       <span style={{textDecoration: "underline", color:"blue"}} href="#" id="Tooltippassenger"> <i class="fas fa-users text-black mx-1 prefix "></i></span>
       <br/>
@@ -78,13 +103,13 @@ function CarRental() {
       </Tooltip>
       </div>
       
-      </div>
-      <p class="card-text text-md my-4"><code class="text-2xl text-yellow-500">$</code> 50 /day</p>
+      </div> */}
+      {/* <p class="card-text text-md my-4"><code class="text-2xl text-yellow-500">$</code> 50 /day</p>
       <button type="button" class="whitespace-no-wrap inline-flex items-center justify-center px-6 py-1 border border-transparent text-base leading-6 font-bold rounded-md text-white bg-green-500 hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-yellow active:bg-blue-700 transition ease-in-out duration-150" data-toggle="modal" data-target="#exampleModalLong">
       View More
-</button>
+</button> */}
 
-
+{/* 
 <div class=" modal fade animated bounceIn" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
  <div class="modal-dialog" role="document">
   <div class="modal-content modal-fullscreen">
@@ -156,16 +181,20 @@ function CarRental() {
    </div>
    <div class="modal-footer">
     <button type="button" data-dismiss="modal">Close</button>
-    {/* <button type="button" class="btn btn-primary">Save changes</button> */}
+    <button type="button" class="btn btn-primary">Save changes</button>
    </div>
   </div>
  </div>
-</div>
+</div> */}
 
    </div>
 </div>
  </div>
- <div class="col-md-3">
+ 
+)
+}
+)}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/Toyota Land Cruiser Safari.jpg" style={{ height:200,}} alt=""/>
@@ -284,15 +313,15 @@ function CarRental() {
    </div>
    <div class="modal-footer">
     <button type="button" data-dismiss="modal">Close</button>
-    {/* <button type="button" class="btn btn-primary">Save changes</button> */}
+    <button type="button" class="btn btn-primary">Save changes</button>
    </div>
   </div>
  </div>
 </div>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/Luxury Toyota V-8.jpg" style={{ height:200,}} alt=""/>
@@ -411,15 +440,15 @@ function CarRental() {
    </div>
    <div class="modal-footer">
     <button type="button" data-dismiss="modal">Close</button>
-    {/* <button type="button" class="btn btn-primary">Save changes</button> */}
+    <button type="button" class="btn btn-primary">Save changes</button>
    </div>
   </div>
  </div>
 </div>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/VIP vehicle.jpg" style={{ height:200,}} alt=""/>
@@ -538,14 +567,14 @@ function CarRental() {
    </div>
    <div class="modal-footer">
     <button type="button" data-dismiss="modal">Close</button>
-    {/* <button type="button" class="btn btn-primary">Save changes</button> */}
+    <button type="button" class="btn btn-primary">Save changes</button>
    </div>
   </div>
  </div>
 </div>
    </div>
 </div>
- </div>
+ </div> */}
  </div>
  </div>
 <Footer/>   

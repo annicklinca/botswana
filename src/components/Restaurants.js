@@ -1,9 +1,29 @@
-import React,{useState,useHistory} from 'react';
+import React,{Component,useState,useEffect} from 'react';
 import "../css/tailwindcss.css";
 import "../css/tourism.css";
 import Navbar from "./navbar";
+import axios from 'axios';
 
 function Restaurants() {
+
+   const [data, setData] = useState([]);
+  const pathed='http://127.0.0.1:8000'
+  
+  
+         //let fetch information
+         useEffect( ()=>{
+            // async await
+           const response = axios.get('http://127.0.0.1:8000/Restaurant/') 
+           .then(res=>{
+             setData(res.data);
+             console.log(res)
+         
+           })
+           .catch((err)=>{
+             console.log(err)
+           })
+         } ,[]
+         );
 
     return(
         <>
@@ -31,24 +51,34 @@ function Restaurants() {
 <div class="mx-3 mt-2">
 <h5 className=" p-2 pt-4 font-bold">Restaurants</h5>
 		<div class="row">
+      {data.map((item,key)=>{ 
+        return(
  <div class="col-md-3 ">
 <div class="card mb-3 shadow-md">
      <img class="card-img-top"
-      src="image/resto1.jpeg" style={{ height:200,}} alt=""/>
+      src={pathed+item.image} alt={item.image}/>
      <div class="card-body">
-      <h4 class="card-title font-bold">SPORTS BAR & RESTAURANT Shorobe Road Maun</h4>
-      <p class="card-text">
+     <h4 class="card-title font-bold">{item.location}</h4>
+     <h4 class="card-title font-bold">{item.telephone}</h4>
+     <h4 class="card-title text-sm">{item.description}</h4>
+      {/* <p class="card-text">
       Sport's Bar had, for a while, the reputation of being the benchmark for the crazy weekend evenings 
       of the pilots. If this was the case, the fashion had to pass. There is still a good place to 
       celebrate if you want to drink coups. The restaurant is varied and the cellar is full, but the 
-      restaurant remains without exceptional charm. </p>
-      <button type="button" class="whitespace-no-wrap inline-flex items-center justify-center px-6 py-1 border border-transparent text-base leading-6 font-bold rounded-md text-white bg-green-500 hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-yellow active:bg-blue-700 transition ease-in-out duration-150">
+      restaurant remains without exceptional charm. </p> */}
+      {/* <button type="button" class="whitespace-no-wrap inline-flex items-center justify-center px-6 py-1 border border-transparent text-base leading-6 font-bold rounded-md text-white bg-green-500 hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-yellow active:bg-blue-700 transition ease-in-out duration-150">
       View More
-</button>
+</button> */}
    </div>
 </div>
  </div>
- <div class="col-md-3">
+
+)
+}
+)}
+
+
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/resto2.jpeg" style={{ height:200, }} alt=""/>
@@ -63,8 +93,8 @@ function Restaurants() {
 </button>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/resto3.jpeg" style={{ height:200,}} alt=""/>
@@ -79,8 +109,8 @@ function Restaurants() {
 </button>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/resto4.jpeg" style={{ height:200,}} alt=""/>
@@ -97,8 +127,8 @@ function Restaurants() {
 </button>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md">
      <img class="card-img-top"
       src="image/resto5.jpeg" style={{ height:200,}} alt=""/>
@@ -112,8 +142,8 @@ function Restaurants() {
 </button>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/resto6.jpeg" style={{ height:200,}} alt=""/>
@@ -130,7 +160,7 @@ function Restaurants() {
 </button>
    </div>
 </div>
- </div>
+ </div> */}
  </div>
  </div>
        

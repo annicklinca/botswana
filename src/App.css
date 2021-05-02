@@ -60,3 +60,10 @@
   border-top: 1px solid #9ea2a2 !important;
   justify-items: center;
 }
+.card-img-top{
+  width: 300px;
+  height: 210px;
+}
+.card-title {
+  width: 200;
+}

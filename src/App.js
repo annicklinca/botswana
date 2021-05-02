@@ -9,7 +9,7 @@ import {
 import Body from './components/body';
 import Signup from './components/Signup.js';
 import Signin from './components/Signin.js';
-import Tourism from './components/Tourism.js';
+import Hotel from './components/Hotel.js';
 import CarRental from './components/CarRental.js';
 import ContactPage  from './components/Contact.js';
 import Nightclub from './components/Nightclub.js';
@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/signin" component={Signin}/>
         <Route exact path="/Nightclub" component={Nightclub}/>
         <Route exact path="/Restaurants" component={Restaurants}/>
-        <Route exact path="/tourism" component={Tourism}/>
+        <Route exact path="/hotel" component={Hotel}/>
         <Route exact path="/contactus" component={ContactPage}/>
         <Route exact path="/travel_agences" component={TravelAgencies}/>
         <Route exact path="/Car_Rental" component={CarRental}/>

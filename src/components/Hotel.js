@@ -1,9 +1,32 @@
-import React,{useState,useHistory} from 'react';
+import React,{Component,useState,useEffect} from 'react';
 import "../css/tailwindcss.css";
-import "../css/tourism.css";
+// import "../css/hotel.css";
 import Navbar from "./navbar";
 import Footer from "./Footer.js";
-function Tourism() {
+import axios from 'axios';
+
+
+function Hotel() {
+
+   const [data, setData] = useState([]);
+   const pathed='http://127.0.0.1:8000'
+   
+   
+          //let fetch information
+          useEffect( ()=>{
+             // async await
+            const response = axios.get('http://127.0.0.1:8000/Hotel/') 
+            .then(res=>{
+              setData(res.data);
+              console.log(res)
+          
+            })
+            .catch((err)=>{
+              console.log(err)
+            })
+          } ,[]
+          );
+
 
     return(
         <>
@@ -31,20 +54,41 @@ function Tourism() {
 <div class="mx-3 mt-2">
 <h5 className=" p-2 pt-4 font-bold">Best Hotels and Lodge</h5>
 		<div class="row">
- <div class="col-md-3 ">
+      {data.map((item,key)=>{ 
+        return(
+ <div key={key} class="col-md-3 ">
 <div class="card mb-3 shadow-md">
      <img class="card-img-top"
-      src="image/hilton.jpeg" style={{ height:200,}} alt=""/>
+      src={pathed+item.image} alt={item.image}/>
      <div class="card-body">
-      <h4 class="card-title font-bold">Hilton Garden Inn</h4>
-      <p class="card-text">A modern hotel in Gaborone, offering business and leisure travelers all the modern amenities that they expect from an international Hotel brand<br></br>offering include free wifi, a pool, and an on-site restaurant with best view.</p>
+     <h4 class="card-title text-sm">{item.location}</h4>
+      <h4 class="card-title text-sm">{item.telephone}</h4>
+      <h4 class="card-title text-sm">{item.description}</h4>
+        
+     {/* {data.map( (item,key)=>{
+            return(
+<h4 key={key} className="text-center text-white">{item.title}</h4>
+  )
+}
+)} */}
+      
+      {/* <p class="card-text">A modern hotel in Gaborone, offering business and leisure travelers all the modern amenities that they expect from an international Hotel brand<br></br>offering include free wifi, a pool, and an on-site restaurant with best view.</p>
       <button type="button" class="whitespace-no-wrap inline-flex items-center justify-center px-6 py-1 border border-transparent text-base leading-6 font-bold rounded-md text-white bg-green-500 hover:bg-blue-700 focus:outline-none focus:border-blue-700 focus:shadow-outline-yellow active:bg-blue-700 transition ease-in-out duration-150">
       View More
-</button>
+</button> */}
    </div>
 </div>
  </div>
- <div class="col-md-3">
+
+
+)
+}
+)}
+
+
+
+
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/travelodge.jpeg" style={{ height:200,}} alt=""/>
@@ -56,8 +100,8 @@ function Tourism() {
 </button>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/protea.jpeg" style={{ height:200,}} alt=""/>
@@ -69,8 +113,8 @@ function Tourism() {
 </button>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/marina.jpeg" style={{ height:200,}} alt=""/>
@@ -82,8 +126,8 @@ function Tourism() {
 </button>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md">
      <img class="card-img-top"
       src="image/safari.jpeg" style={{ height:200,}} alt=""/>
@@ -95,8 +139,8 @@ function Tourism() {
 </button>
    </div>
 </div>
- </div>
- <div class="col-md-3">
+ </div> */}
+ {/* <div class="col-md-3">
 <div class="card mb-3 shadow-md ">
      <img class="card-img-top"
       src="image/waterfront.jpeg" style={{ height:200,}} alt=""/>
@@ -108,11 +152,11 @@ function Tourism() {
 </button>
    </div>
 </div>
- </div>
+ </div> */}
  </div>
  </div>
 <Footer/>   
 </>
 )
 }
-export default Tourism;
+export default Hotel;
