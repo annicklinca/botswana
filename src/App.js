@@ -15,6 +15,7 @@ import ContactPage  from './components/Contact.js';
 import Nightclub from './components/Nightclub.js';
 import Restaurants from './components/Restaurants.js';
 import TravelAgencies from './components/TravelAgencies';
+import Homes from './components/home';
 function App() {
   return (
      <Router>
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/contactus" component={ContactPage}/>
         <Route exact path="/travel_agences" component={TravelAgencies}/>
         <Route exact path="/Car_Rental" component={CarRental}/>
+        <Route exact path="/homes_welcome" component={Homes}/>
      
         </Switch>
     </Router>
