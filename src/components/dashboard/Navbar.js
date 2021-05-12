@@ -24,9 +24,9 @@ function Navbar() {
    const token =localStorage.getItem('token')
    const category =localStorage.getItem('category')
 
-   if(token==='' || category!=='teacher' ){
-history.push('/') 
-}
+//    if(token==='' || category!=='teacher' ){
+// history.push('/') 
+// }
     return(
         <>
 <div className=" bg-white ">
