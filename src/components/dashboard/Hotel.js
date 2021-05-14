@@ -74,10 +74,13 @@ function Dashboard() {
                   </div>
                   <div><br></br>
                   <form action="/action_page.php">
-  <label for="fname">First name:</label>
+  <label for="fname">Title:</label>
   <input type="text" id="fname" name="fname" /><br/>
-  <label for="lname">Last name:</label>
+  <label for="lname">Description:</label>
   <input type="text" id="lname" name="lname" /><br/>
+  <label for="lname">Images:</label>
+  <input type="text" id="lname" name="lname" /><br/>
+
   <label for="fname">Gender:</label>
     <input type="radio" id="male" name="gender" />
   <label for="male">Male</label>
