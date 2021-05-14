@@ -72,7 +72,28 @@ function Dashboard() {
                        <span className="ml-48 ">Earnings</span>
                    </div>
                   </div>
-                <div className="row mt-4">
+
+
+                  <div><br></br>
+                  <form action="/action_page.php">
+  <label for="fname">Title:</label>
+  <input type="text" id="fname" name="fname" /><br/>
+  <label for="lname">Description:</label>
+  <input type="text" id="lname" name="lname" /><br/>
+  <label for="lname">Images:</label>
+  <input type="text" id="lname" name="lname" /><br/>
+
+  <label for="fname">Gender:</label>
+    <input type="radio" id="male" name="gender" />
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" />
+  <label for="female">Female</label><br/><br/>
+  <input type="submit" value="Submit"/>
+</form>
+                  
+                      
+                  </div>
+                {/* <div className="row mt-4">
                <div className="col-6 bg-white rounded-lg p-2 ml-4">
                <Bar
 	        data={{
@@ -82,7 +103,8 @@ function Dashboard() {
                     data: [12, 19, 3, 5, 2, 3],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',\
+                        
                         'rgba(255, 206, 86, 0.2)',
                         'rgba(75, 192, 192, 0.2)',
                         'rgba(153, 102, 255, 0.2)',
@@ -122,7 +144,7 @@ function Dashboard() {
                </div>
             
              
-                </div>
+                </div> */}
                 <h4 className="text-md p-2">Most visited destinations in Botswana</h4> 
                 <div className="bg-white rounded-md mt-4 mx-2" > 
                 <div className="row ">

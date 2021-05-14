@@ -37,7 +37,7 @@ function NavLeft() {
                             </a>
                         </li>
                         <li className="text-center hover:bg-blue-100 rounded-xl p-1">
-                            <a href="/timetable">
+                            <a href="/addhotel">
                                 <div class="row">
                                     <div className="col-3 ">
                                         <i className="text-xl text-green-400 inline-block"><FaCalendarAlt/></i>
@@ -49,7 +49,7 @@ function NavLeft() {
                             </a>
                         </li>
                         <li className="text-center hover:bg-blue-100 rounded-xl p-1">
-                            <a href="">
+                            <a href="/">
                                 <div class="row">
                                     <div className="col-3">
                                         <i className="text-xl text-blue-300 inline-block"><FaAddressCard/></i>
@@ -73,7 +73,7 @@ function NavLeft() {
                             </a>
                         </li>
                         <li className="text-center hover:bg-blue-100 rounded-xl p-1">
-                            <a href="">
+                            <a href="/addmokoro">
                                 <div class="row">
                                     <div className="col-3 pl-20">
                                         <i className="text-xl text-black-400"><FaLink/></i>
@@ -85,7 +85,7 @@ function NavLeft() {
                             </a>
                         </li>
                         <li className="text-center hover:bg-blue-100 rounded-xl p-1">
-                            <a href="">
+                            <a href="/addcarrental">
                                 <div class="row">
                                     <div className="col-3 pl-20">
                                         <i className="text-xl text-indigo-500"><FaBook/></i>
@@ -124,7 +124,7 @@ function NavLeft() {
                         </li>
 
                         <li className="text-center hover:bg-blue-100 rounded-xl p-1">
-                            <a href="">
+                            <a href="/addboat">
                                 <div class="row">
                                     <div className="col-3 pl-20">
                                         <i className="text-3xl text-red-300"><FaExclamationTriangle/></i>

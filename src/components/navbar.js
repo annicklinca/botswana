@@ -25,9 +25,9 @@ function Navbar1(){
         <NavDropdown.Divider />
         <NavDropdown.Item href="/Car_Rental">Care Rental</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#">Boat</NavDropdown.Item>
+        <NavDropdown.Item href="/boat">Boat</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#">Mokoro</NavDropdown.Item>
+        <NavDropdown.Item href="/mokoro">Mokoro</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#">Currency Exchange service</NavDropdown.Item>
       </NavDropdown>

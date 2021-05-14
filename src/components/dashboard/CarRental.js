@@ -72,7 +72,7 @@ function Dashboard() {
                        <span className="ml-48 ">Earnings</span>
                    </div>
                   </div>
-                <div className="row mt-4">
+                {/* <div className="row mt-4">
                <div className="col-6 bg-white rounded-lg p-2 ml-4">
                <Bar
 	        data={{
@@ -122,7 +122,7 @@ function Dashboard() {
                </div>
             
              
-                </div>
+                </div> */}
                 <h4 className="text-md p-2">Most visited destinations in Botswana</h4> 
                 <div className="bg-white rounded-md mt-4 mx-2" > 
                 <div className="row ">
