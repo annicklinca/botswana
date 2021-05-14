@@ -72,7 +72,20 @@ function Dashboard() {
                        <span className="ml-48 ">Earnings</span>
                    </div>
                   </div>
-                  <div>
+                  <div><br></br>
+                  <form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" /><br/>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" /><br/>
+  <label for="fname">Gender:</label>
+    <input type="radio" id="male" name="gender" />
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" />
+  <label for="female">Female</label><br/><br/>
+  <input type="submit" value="Submit"/>
+</form>
+                  
                       
                   </div>
                 {/* <div className="row mt-4">
