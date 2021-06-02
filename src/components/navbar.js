@@ -35,6 +35,8 @@ function Navbar1(){
       <Nav.Link href="#"><span class="text-black text-base">About Us</span></Nav.Link>
       <Nav.Link href="/contactus"><span class="text-black text-base">Contact Us</span></Nav.Link>
       <Nav.Link href="#"><span class="text-black text-base">Get the App</span></Nav.Link>
+      <Nav.Link href="/listservices"><span class="text-black text-base">List your Services</span></Nav.Link>
+
     </Nav>
     <Nav>
       <Nav.Link href="/signin"><div className=" mt-2 inline-block pl-4 pr-12 font-bold text-lg hover:text-yellow-500"><p className="text-black">Login</p></div></Nav.Link>

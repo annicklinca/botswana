@@ -4,7 +4,7 @@ import {useHistory} from "react-router-dom";
 import "../css/tailwindcss.css";
 import "../css/sign.css";
 import axios from 'axios';
-function Signup() {
+function Listservices() {
 
   const [firstname, setFirstname]=useState('')
   const [lastname, setLastname]=useState('')
@@ -76,9 +76,9 @@ function Signup() {
                               <div class="col-md-12 mb-4">
                           
                                 <h3 className="font-bold text-green-700 text-center p-1">
-                                      Create account
+                                      Register Your Services
                                 </h3>
-                                <h5 className="text-center font-semibold">Already have an account? <a href="/signin" className="text-blue-700 hover:text-yellow-500">Log In</a></h5>
+                                {/* <h5 className="text-center font-semibold">Already have an account? <a href="/signin" className="text-blue-700 hover:text-yellow-500">Log In</a></h5>
                                 
                                 <button type="button" class="bg-white inline-block rounded-full  styledbutton_rounded_button__3OCrW w-100 h-12 justify-content-center mb-0 metro">
                                 <a href="#" className="text-black"><svg width="24" height="23" class="mx-8 my-2 inline-block" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,36 +89,40 @@ function Signup() {
                                   {success? <p className="bg-green-200 pr-4 pl-4 pt-2 pb-2 font-medium text-red-800">{success}</p>
                                   :<span></span>}
                                   {notsuccess? <p className="bg-red-200 pr-4 pl-4 pt-2 pb-2 font-medium text-red-800">{notsuccess}</p>
-                                  :<span></span>}
+                                  :<span></span>} */}
                                   <form class="pt-3 pb-5 pl-5 pr-5" onSubmit={handleSignup}>
                                     <div class="form-group">
-                                      <label className="font-normal text-green-700 font-bold">FIRST NAME</label>
+                                      <label className="font-normal text-green-700 font-bold">Name of Services Owner</label>
                                       <input type="text" className="form-control rounded-full p-4" value={firstname} onChange={event=>setFirstname(event.target.value)} placeholder="Enter full name" required />
                                     </div>
                                     <div class="form-group">
-                                      <label className="font-normal text-green-700 font-bold">LAST NAME</label>
-                                      <input type="text" className="form-control rounded-full p-4" value={lastname} onChange={event=>setLastname(event.target.value)} placeholder="Enter full name" required />
+                                      <label className="font-normal text-green-700 font-bold">Name of The Services</label>
+                                      <input type="text" className="form-control rounded-full p-4" value={lastname} onChange={event=>setLastname(event.target.value)} placeholder="Enter your services name" required />
                                     </div>
                                     
                                     <div class="form-group">
-                                      <label className="font-normal text-green-700 font-bold">EMAIL</label>
+                                      <label className="font-normal text-green-700 font-bold"> Services Owner EMAIL</label>
                                       <input type="emal" className="form-control rounded-full p-4" value={email} onChange={event=>setEmail(event.target.value)} placeholder="Enter your email" required />
                                     </div>
+                                    
                                     <div class="form-group">
-                                      <label className="font-normal text-green-700 font-bold">PHONE NUMBER</label>
-                                      <input type="text" className="form-control rounded-full p-4"value={phonenumber} onChange={event=>setPhonenumber(event.target.value)} placeholder="Enter phone number" required />
-                                    </div>
-                                    <div class="form-group">
-                                      <label className="font-normal text-green-700 font-bold">GENDER</label> <br/>
+                                      <label className="font-normal text-green-700 font-bold">Services Categories</label> <br/>
                                       <select className="rounded-sm w-ful p-2" value={gender} onChange={event=>setGender(event.target.value)}>
-                                        <option>Male</option>
-                                        <option>Female</option>
+                                        <option>Business services</option>
+                                        <option>Communication</option>
+                                        <option>Construction and engineering</option>
+                                        <option>Distribution</option>
+                                        <option>Education</option>
+                                        <option>Enviromnent</option>
+                                        <option>Finance</option>
+                                        <option>Tourism</option>
+
                                       </select>
                                     </div>
                                     
                                     
                                     <button class="btn btn-success my-4 btn-block waves-effect waves-light rounded-full" type="submit">
-                                    {loading?<span>Please wait...</span>:<span>Sign up</span>}
+                                    {loading?<span>Please wait...</span>:<span>Register</span>}
                                     </button>
                           
                                     <p>By clicking By creating an account you agree to the BTSW!
@@ -140,4 +144,4 @@ function Signup() {
         </>
     )
 }
-export default Signup;
+export default Listservices;

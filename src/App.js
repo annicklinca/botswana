@@ -12,8 +12,8 @@ import Signin from './components/Signin.js';
 import Hotel from './components/Hotel.js';
 import CarRental from './components/CarRental.js';
 import Boat from './components/Boat.js';
-import Mokoro from './components/Mokoro.js'
-
+import Mokoro from './components/Mokoro.js';
+import Listservices from './components/listservices.js';
 import ContactPage  from './components/Contact.js';
 import Nightclub from './components/Nightclub.js';
 import Restaurants from './components/Restaurants.js';
@@ -38,6 +38,7 @@ function App() {
         <Route  path="/Restaurants" component={Restaurants}/>
         <Route  path="/hotel" component={Hotel}/>
         <Route   path="/contactus" component={ContactPage}/>
+        <Route path="/listservices" component={Listservices}/>
         <Route  path="/travel_agences" component={TravelAgencies}/>
         <Route  path="/Car_Rental" component={CarRental}/>
         <Route  path="/boat" component={Boat}/>
