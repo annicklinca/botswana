@@ -60,7 +60,7 @@ function Signin() {
                             :<span></span>}
                                     </div>
                                     <div class="form-group">
-                                      <label className="font-bold text-green-700 font-bold ">USERNAME</label>
+                                      <label className="font-bold text-green-700 font-bold ">EMAIL</label>
                                       <input type="emal" className="form-control rounded-full p-4" value={username} onChange={event=>setUsername(event.target.value)} placeholder="Enter your email" required />
                                     </div>
                                     <div class="form-group">

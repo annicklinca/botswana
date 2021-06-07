@@ -34,7 +34,7 @@ function Navbar1(){
       </span>
       <Nav.Link href="#"><span class="text-black text-base">About Us</span></Nav.Link>
       <Nav.Link href="/contactus"><span class="text-black text-base">Contact Us</span></Nav.Link>
-      <Nav.Link href="#"><span class="text-black text-base">Get the App</span></Nav.Link>
+      {/* <Nav.Link href="#"><span class="text-black text-base">Get the App</span></Nav.Link> */}
       <Nav.Link href="/listservices"><span class="text-black text-base">List your Services</span></Nav.Link>
 
     </Nav>

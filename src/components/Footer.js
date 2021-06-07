@@ -82,22 +82,22 @@ function Footer(){
       
               <ul class="list-unstyled">
                 <li>
-                  <a class="text-white" href="#!">Hotels & Loges</a>
+                  <a class="text-white" href="/Hotel">Hotels & Loges</a>
                 </li>
                 <li>
-                  <a class="text-white" href="#!">Travel Agencies</a>
+                  <a class="text-white" href="/TravelAgencies">Travel Agencies</a>
                 </li>
                 <li>
-                  <a class="text-white" href="#!">Restaurants</a>
+                  <a class="text-white" href="/Restaurants">Restaurants</a>
                 </li>
                 <li>
-                  <a class="text-white" href="#!">Car Rental</a>
+                  <a class="text-white" href="/Car_Rental">Car Rental</a>
                 </li>
                 <li>
-                  <a class="text-white" href="#!">Night clubs</a>
+                  <a class="text-white" href="/Nightclub">Night clubs</a>
                 </li>
                 <li>
-                  <a class="text-white" href="#!">Currency Exchange</a>
+                  <a class="text-white" href="/">Currency Exchange</a>
                 </li>
               </ul>
       
@@ -107,7 +107,7 @@ function Footer(){
            
       
 
-            <div class="col-md-3 mx-auto">
+            {/* <div class="col-md-3 mx-auto">
               <h5 class="font-weight-bold text-uppercase text-indigo-700 mt-3 mb-4">Get The App</h5>
       
               <ul class="list-unstyled">
@@ -119,7 +119,7 @@ function Footer(){
                 </li>
               </ul>
       
-            </div>
+            </div> */}
 
       
           </div>
