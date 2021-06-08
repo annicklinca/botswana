@@ -55,7 +55,7 @@ function Footer(){
                 </li>
                 <li>
                 <i class="fas mx-1 text-white fa-envelope prefix text-blue-700  "></i>
-                  <a class="text-white" href="#!">info@ngwana.africa</a>
+                  <a class="text-white" href="info@meetinbotswana.com">info@meetinbotswana.com</a>
                 </li>
                 <p class=" font-bold my-1 text-indigo-700 mb-2">Follow Us</p>
                 <li>

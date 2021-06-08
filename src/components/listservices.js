@@ -108,14 +108,14 @@ function Listservices() {
                                     <div class="form-group">
                                       <label className="font-normal text-green-700 font-bold">Services Categories</label> <br/>
                                       <select className="rounded-sm w-ful p-2" value={gender} onChange={event=>setGender(event.target.value)}>
-                                        <option>Business services</option>
-                                        <option>Communication</option>
-                                        <option>Construction and engineering</option>
-                                        <option>Distribution</option>
-                                        <option>Education</option>
-                                        <option>Enviromnent</option>
-                                        <option>Finance</option>
-                                        <option>Tourism</option>
+                                        <option>Hotel and Loges</option>
+                                        <option>Travel Agencies</option>
+                                        <option>Restaurants</option>
+                                        <option>Night Clubs</option>
+                                        <option>Car Rental</option>
+                                        <option>Boat</option>
+                                        <option>Mokoro</option>
+                                        <option>Currency Exchange Services</option>
 
                                       </select>
                                     </div>
